@@ -1,0 +1,427 @@
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos/1.0.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#SameAs
+<http://www.w3.org/2000/01/rdf-schema#SameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a specific aircraft to its model." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "has aircraft model" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to the entity that manufactured the system." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#label> "manufactured by" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger> .
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft model" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://dbpedia.org/ontology/city" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#A380
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airbus
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airbus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airbus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Boeing
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#QatarAirways
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Ryanair
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid18 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#label> "PublishedReview" .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid18 <http://www.w3.org/2003/11/swrl#body> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

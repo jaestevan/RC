@@ -1,0 +1,436 @@
+@prefix : <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#> .
+
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos> rdf:type owl:Ontology ;
+                                                                          owl:versionIRI <https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#SameAs
+rdfs:SameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#domain
+rdfs:domain rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom
+:flownFrom rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Flight .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity
+:flownFromCity rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :flownFrom ;
+               rdf:type owl:FunctionalProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry
+:flownFromCountry rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :flownFrom ;
+                  rdf:type owl:FunctionalProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo
+:flownTo rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Flight .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity
+:flownToCity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :flownTo ;
+             rdf:type owl:FunctionalProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry
+:flownToCountry rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :flownTo ;
+                rdf:type owl:FunctionalProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel
+:hasAircraftModel rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ,
+                           owl:SymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :Aircraft ;
+                  rdfs:range :AircraftModel ;
+                  rdfs:comment "Links a specific aircraft to its model." ;
+                  rdfs:label "has aircraft model" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight
+:hasFlight rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ,
+                    owl:SymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Trip ;
+           rdfs:range :Flight .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer
+:hasReviewer rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:SymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Review ;
+             rdfs:range :Passenger .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip
+:hasTrip rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ,
+                  owl:SymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Review ;
+         rdfs:range :Trip .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy
+:manufacturedBy rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ,
+                         owl:SymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :Aircraft ;
+                rdfs:range :AircraftManufacturer ;
+                rdfs:comment "A link to the entity that manufactured the system." ;
+                rdfs:label "manufactured by" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy
+:operatedBy rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ,
+                     owl:SymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range :Airline .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom
+:passengerFrom rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ,
+                        owl:SymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :Passenger ;
+               rdfs:range :Country .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain :Passenger ;
+                    rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown
+:Date_flown rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published
+:Date_published rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Review ;
+                rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed
+:Date_reviewed rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment
+:hasComment rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName
+:hasName rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Review ;
+         rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Review ;
+          rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished
+:isPublished rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Review ;
+             rdfs:range xsd:boolean .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended
+:isRecommended rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:boolean .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified
+:isVerified rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight ;
+          rdfs:SameAs "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft" ;
+          rdfs:comment "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." ;
+          rdfs:label "Aircraft" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer
+:AircraftManufacturer rdf:type owl:Class ;
+                      rdfs:subClassOf :Aircraft .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel
+:AircraftModel rdf:type owl:Class ;
+               rdfs:subClassOf :Aircraft ;
+               rdfs:comment "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured." ;
+               rdfs:label "Aircraft model" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline
+:Airline rdf:type owl:Class .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat
+:BusinessSeat rdf:type owl:Class ;
+              rdfs:subClassOf :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller
+:BusinessTraveller rdf:type owl:Class ;
+                   rdfs:subClassOf :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Country ;
+      rdfs:SameAs "https://dbpedia.org/ontology/city" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country
+:Country rdf:type owl:Class .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller
+:CoupleTraveller rdf:type owl:Class ;
+                 rdfs:subClassOf :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat
+:EconomySeat rdf:type owl:Class ;
+             rdfs:subClassOf :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller
+:FamilyTraveller rdf:type owl:Class ;
+                 rdfs:subClassOf :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat
+:FistSeat rdf:type owl:Class ;
+          rdfs:subClassOf :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight
+:Flight rdf:type owl:Class .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger
+:Passenger rdf:type owl:Class .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished
+:ReviewPublished rdf:type owl:Class ;
+                 rdfs:subClassOf [ owl:intersectionOf ( :Review
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :isPublished ;
+                                                          owl:hasValue "true"^^xsd:boolean
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf :Trip .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller
+:SoloTraveller rdf:type owl:Class ;
+               rdfs:subClassOf :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType
+:TravellerType rdf:type owl:Class ;
+               rdfs:subClassOf :Trip .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip
+:Trip rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#A380
+:A380 rdf:type owl:NamedIndividual ,
+               :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airbus
+:Airbus rdf:type owl:NamedIndividual ,
+                 :AircraftManufacturer .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Boeing
+:Boeing rdf:type owl:NamedIndividual ,
+                 :AircraftManufacturer .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#QatarAirways
+:QatarAirways rdf:type owl:NamedIndividual ,
+                       :Airline .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Ryanair
+:Ryanair rdf:type owl:NamedIndividual ,
+                  :Airline .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300
+<https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300> rdf:type owl:NamedIndividual ,
+                                                                                          :AircraftModel .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( :Review
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isPublished ;
+                         owl:hasValue "true"^^xsd:boolean
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ReviewPublished
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BusinessSeat
+                :EconomySeat
+                :FistSeat
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BusinessTraveller
+                :CoupleTraveller
+                :FamilyTraveller
+                :SoloTraveller
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "PublishedReview" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isPublished ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ReviewPublished ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
