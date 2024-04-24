@@ -1,0 +1,518 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PublishedReview"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid20"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished"
+  } ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat"
+    } ]
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#SameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos/1.0.0"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#777-300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#A380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airbus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A physical realization of an aircraft, produced according to the specifications defined for a specific model type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aircraft model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Boeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#QatarAirways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a specific aircraft to its model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has aircraft model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A link to the entity that manufactured the system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufactured by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country"
+  } ]
+} ]

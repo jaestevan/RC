@@ -1,0 +1,174 @@
+{
+  "@context" : {
+    "hasTitle" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flownFromCity" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCity",
+      "@type" : "@id"
+    },
+    "Review" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Review"
+    },
+    "Country" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Country"
+    },
+    "flownToCity" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCity",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasName" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flownFromCountry" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFromCountry",
+      "@type" : "@id"
+    },
+    "isRecommended" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isRecommended",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasComment" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "manufacturedBy" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#manufacturedBy",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Date_flown" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_flown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "AircraftModel" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftModel"
+    },
+    "operatedBy" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#operatedBy",
+      "@type" : "@id"
+    },
+    "flownFrom" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownFrom",
+      "@type" : "@id"
+    },
+    "BusinessSeat" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessSeat"
+    },
+    "flownToCountry" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownToCountry",
+      "@type" : "@id"
+    },
+    "hasAircraftModel" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasAircraftModel",
+      "@type" : "@id"
+    },
+    "hasFlight" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasFlight",
+      "@type" : "@id"
+    },
+    "Passenger" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Passenger"
+    },
+    "FamilyTraveller" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FamilyTraveller"
+    },
+    "BusinessTraveller" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#BusinessTraveller"
+    },
+    "isVerified" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isVerified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "passengerFrom" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#passengerFrom",
+      "@type" : "@id"
+    },
+    "hasTrip" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasTrip",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain"
+    },
+    "Aircraft" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Aircraft"
+    },
+    "SoloTraveller" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SoloTraveller"
+    },
+    "Date_published" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_published",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "CoupleTraveller" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#CoupleTraveller"
+    },
+    "EconomySeat" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#EconomySeat"
+    },
+    "Airline" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Airline"
+    },
+    "Flight" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Flight"
+    },
+    "hasReviewer" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#hasReviewer",
+      "@type" : "@id"
+    },
+    "flownTo" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#flownTo",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#City"
+    },
+    "isPublished" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#isPublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Trip" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AircraftManufacturer" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#AircraftManufacturer"
+    },
+    "FistSeat" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#FistSeat"
+    },
+    "ReviewPublished" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#ReviewPublished"
+    },
+    "SeatType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#SeatType"
+    },
+    "SameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#SameAs"
+    },
+    "TravellerType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#TravellerType"
+    },
+    "Date_reviewed" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/SatisfaccionVuelos#Date_reviewed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    }
+  }
+}
