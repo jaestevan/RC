@@ -1,0 +1,1181 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"
+    }, {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789"
+    } ]
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#SameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Datos sobre encuestas de satisfacción de vuelos de dos aerolíneas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FlightSatisfactionSurveys"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.1.0"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A physical realization of an aircraft, produced according to the specifications defined for a specific model type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Aircraft model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A manufacturer of physical aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Airframe manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A company that provides air transport services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country where the city is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#SameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country where the thing is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual flight operated by an airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Airlines not linked to a larger airline alliance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Independent airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Airlines part of oneworld alliance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Oneworld"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName" : [ {
+    "@value" : "Qandeel Ahtasham"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName" : [ {
+    "@value" : "Clayton Qualters"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName" : [ {
+    "@value" : "Wayne Burgess"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger posting a review about a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment" : [ {
+    "@value" : "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been “reserved” were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didn’t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didn’t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isn’t complex."
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle" : [ {
+    "@value" : "no attempt to address our complaint"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended" : [ {
+    "@value" : "0"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified" : [ {
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-20"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-20"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment" : [ {
+    "@value" : "12th February 2024 From check in to get onboard remarkable experience. Since steping at Hamad International airport every one was so welcoming. Check in agent was very professional and helpful. Al mourjan lounge was realy good. Great tasting food. On board all cabin crew was kind professional welcoming. Seat very good, leg space and incredible service, and a very clean plane. Inflight entertainment was great too. The staff was very polite. Arriving at London, Qatar staff gave me Fast track card that helps me to pass imigration quick. Thank you Qatar Airways."
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle" : [ {
+    "@value" : "remarkable experience"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended" : [ {
+    "@value" : "1"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified" : [ {
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-07-10"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-07-10"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment" : [ {
+    "@value" : "I fly with Qatar Airways every month. Credit where credit is due they are by far the best airline in the world. Staff are excellent, tentative onboard and at checkin. The seating is very spacious, food is of a high standard and inflight entertainment excellent. You can’t ask for anymore from an airline. I’m in the T4 frequent flyer lounge at Heathrow and WOW Thank you"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle" : [ {
+    "@value" : "seating is very spacious"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended" : [ {
+    "@value" : "1"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified" : [ {
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-10-24"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment" : [ {
+    "@value" : "One of the biggest rip-off companies out there. They give flights at good prices, and then will find any possible way to charge you additional money an make your trip as expensive as possible. Want to cancel your reservation within 24h from the purchase? Not possible. Need some time to choose which luggage you'll need? Be ready to pay double price for that, right after the booking. Want to change your flight? Double price just for the fees. They are tracking everything you do in their app to show you higher prices wherever they can. Customer service replies but doesn't help at all. 100% shameful company."
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle" : [ {
+    "@value" : "They give flights at good prices"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended" : [ {
+    "@value" : "no"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified" : [ {
+    "@value" : "Not Verified"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Individual satisfaction survey results"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Satisfaction review"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seat type of a passenger on a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Seat type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-01"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-09-01"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-06-01"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-12-06"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-11-01"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Traveler type of a passenger on a trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Traveller type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Experience of a passenger taking an individual flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a specific aircraft to its model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has aircraft model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A link to the entity that manufactured the system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufactured by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"
+  } ]
+}, {
+  "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+  } ]
+} ]

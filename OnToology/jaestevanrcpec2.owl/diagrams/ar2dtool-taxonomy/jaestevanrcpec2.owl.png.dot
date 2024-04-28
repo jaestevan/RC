@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "jaestevanrcpec2:TravellerType" "jaestevanrcpec2:City" ":" "jaestevanrcpec2:Trip" "jaestevanrcpec2:SeatType" "jaestevanrcpec2:AirframeManufacturer" "jaestevanrcpec2:Independent" ":" "jaestevanrcpec2:A350" "jaestevanrcpec2:OneWorld" "jaestevanrcpec2:A380" "jaestevanrcpec2:Aircraft" "jaestevanrcpec2:Airline" "jaestevanrcpec2:Flight" "jaestevanrcpec2:A320" "jaestevanrcpec2:AircraftModel" ":" ":" "jaestevanrcpec2:Passenger" "jaestevanrcpec2:Country" "jaestevanrcpec2:Review" ; /*classes style*/
+	"jaestevanrcpec2:OneWorld" -> "jaestevanrcpec2:Airline" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:Airline" -> "jaestevanrcpec2:Flight" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:SeatType" -> "jaestevanrcpec2:Trip" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:TravellerType" -> "jaestevanrcpec2:Trip" [ label = "rdfs:subClassOf" ];
+	":" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:A350" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	":" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:Independent" -> "jaestevanrcpec2:Airline" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:AircraftModel" -> "jaestevanrcpec2:Aircraft" [ label = "rdfs:subClassOf" ];
+	":" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:A320" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:Trip" -> "jaestevanrcpec2:Review" [ label = "rdfs:subClassOf" ];
+	":" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:Passenger" -> "jaestevanrcpec2:Trip" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:AirframeManufacturer" -> "jaestevanrcpec2:Aircraft" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:A380" -> "jaestevanrcpec2:AircraftModel" [ label = "rdfs:subClassOf" ];
+	"jaestevanrcpec2:City" -> "jaestevanrcpec2:Country" [ label = "rdfs:subClassOf" ];
+
+}

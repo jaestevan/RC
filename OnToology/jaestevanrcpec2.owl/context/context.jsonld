@@ -1,0 +1,188 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737"
+    },
+    "hasTitle" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flownFromCity" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity",
+      "@type" : "@id"
+    },
+    "A350" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"
+    },
+    "hasRating" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Review" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"
+    },
+    "Country" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"
+    },
+    "flownToCity" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity",
+      "@type" : "@id"
+    },
+    "seatType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType",
+      "@type" : "@id"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasName" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flownFromCountry" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry",
+      "@type" : "@id"
+    },
+    "isRecommended" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OneWorld" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"
+    },
+    "hasComment" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "manufacturedBy" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Date_flown" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isIn" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn",
+      "@type" : "@id"
+    },
+    "AircraftModel" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"
+    },
+    "Independent" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent"
+    },
+    "operatedBy" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy",
+      "@type" : "@id"
+    },
+    "flownFrom" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom",
+      "@type" : "@id"
+    },
+    "flownToCountry" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry",
+      "@type" : "@id"
+    },
+    "hasAircraftModel" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel",
+      "@type" : "@id"
+    },
+    "hasFlight" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight",
+      "@type" : "@id"
+    },
+    "Passenger" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"
+    },
+    "hasAirplane" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane",
+      "@type" : "@id"
+    },
+    "A380" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"
+    },
+    "isVerified" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "passengerFrom" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom",
+      "@type" : "@id"
+    },
+    "hasTrip" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain"
+    },
+    "Aircraft" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"
+    },
+    "Date_published" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Airline" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"
+    },
+    "Flight" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"
+    },
+    "hasReviewer" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer",
+      "@type" : "@id"
+    },
+    "flownTo" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"
+    },
+    "A320" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320"
+    },
+    "travelerType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType",
+      "@type" : "@id"
+    },
+    "isPublished" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Trip" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AirframeManufacturer" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"
+    },
+    "ReviewPublished" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"
+    },
+    "SeatType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"
+    },
+    "SameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#SameAs"
+    },
+    "hasPassenger" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger",
+      "@type" : "@id"
+    },
+    "TravellerType" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"
+    },
+    "Date_reviewed" : {
+      "@id" : "https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    }
+  }
+}
