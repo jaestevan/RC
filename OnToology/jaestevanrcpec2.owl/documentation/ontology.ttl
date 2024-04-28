@@ -1,0 +1,822 @@
+@prefix : <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#> .
+
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.1.0> ;
+                                                                           rdfs:comment "Datos sobre encuestas de satisfacción de vuelos de dos aerolíneas" ;
+                                                                           rdfs:label "FlightSatisfactionSurveys" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#SameAs
+rdfs:SameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#domain
+rdfs:domain rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom
+:flownFrom rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity
+:flownFromCity rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :flownFrom ;
+               rdf:type owl:FunctionalProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry
+:flownFromCountry rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :flownFrom ;
+                  rdf:type owl:FunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo
+:flownTo rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Flight ;
+         rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity
+:flownToCity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :flownTo ;
+             rdf:type owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:range :City .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry
+:flownToCountry rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :flownTo ;
+                rdf:type owl:FunctionalProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel
+:hasAircraftModel rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :Aircraft ;
+                  rdfs:range :AircraftModel ;
+                  rdfs:comment "Links a specific aircraft to its model." ;
+                  rdfs:label "has aircraft model" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane
+:hasAirplane rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Flight ;
+             rdfs:range :Aircraft .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight
+:hasFlight rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Trip ;
+           rdfs:range :Flight .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger
+:hasPassenger rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Trip ;
+              rdfs:range :Passenger .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer
+:hasReviewer rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Review ;
+             rdfs:range :Passenger .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip
+:hasTrip rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Review ;
+         rdfs:range :Trip .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn
+:isIn rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ,
+               owl:AsymmetricProperty ,
+               owl:IrreflexiveProperty ;
+      rdfs:domain :City ;
+      rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy
+:manufacturedBy rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :Aircraft ;
+                rdfs:range :AirframeManufacturer ;
+                rdfs:comment "A link to the entity that manufactured the system." ;
+                rdfs:label "manufactured by" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy
+:operatedBy rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range :Airline .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom
+:passengerFrom rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :Passenger ;
+               rdfs:range :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType
+:seatType rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Trip ;
+          rdfs:range :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType
+:travelerType rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Trip ;
+              rdfs:range :TravellerType .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown
+:Date_flown rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Trip ;
+            rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published
+:Date_published rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Review ;
+                rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed
+:Date_reviewed rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment
+:hasComment rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Passenger ;
+         rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Review ;
+           rdfs:range xsd:integer .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Review ;
+          rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished
+:isPublished rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Review ;
+             rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended
+:isRecommended rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:string .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified
+:isVerified rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320
+:A320 rdf:type owl:Class ;
+      rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350
+:A350 rdf:type owl:Class ;
+      rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380
+:A380 rdf:type owl:Class ;
+      rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:SameAs "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft" ;
+          rdfs:comment "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." ;
+          rdfs:label "Aircraft"@en-us .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel
+:AircraftModel rdf:type owl:Class ;
+               rdfs:subClassOf :Aircraft ;
+               rdfs:SameAs "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftModel" ;
+               rdfs:comment "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured." ;
+               rdfs:label "Aircraft model"@en-us .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer
+:AirframeManufacturer rdf:type owl:Class ;
+                      rdfs:subClassOf :Aircraft ;
+                      rdfs:SameAs "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer" ;
+                      rdfs:comment "A manufacturer of physical aircraft." ;
+                      rdfs:label "Airframe manufacturer"@en-us .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:subClassOf :Flight ;
+         rdfs:comment "A company that provides air transport services" ;
+         rdfs:label "Airline" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Country ;
+      rdfs:SameAs "https://dbpedia.org/ontology/city" ;
+      rdfs:comment "The country where the city is located." ;
+      rdfs:label "City"@en-us .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country
+:Country rdf:type owl:Class ;
+         rdfs:SameAs "https://dbpedia.org/ontology/country" ;
+         rdfs:comment "The country where the thing is located." ;
+         rdfs:label "Country"@en-us .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:comment "An individual flight operated by an airline" ;
+        rdfs:label "Flight" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent
+:Independent rdf:type owl:Class ;
+             rdfs:subClassOf :Airline ;
+             owl:disjointWith :OneWorld ;
+             rdfs:comment "Airlines not linked to a larger airline alliance" ;
+             rdfs:label "Independent airline" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld
+:OneWorld rdf:type owl:Class ;
+          rdfs:subClassOf :Airline ;
+          rdfs:comment "Airlines part of oneworld alliance" ;
+          rdfs:label "Oneworld" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf :Trip ;
+           rdfs:comment "Passenger posting a review about a trip" ;
+           rdfs:label "Passenger" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review
+:Review rdf:type owl:Class ;
+        rdfs:comment "Individual satisfaction survey results" ;
+        rdfs:label "Satisfaction review" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished
+:ReviewPublished rdf:type owl:Class .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf :Trip ;
+          rdfs:comment "Seat type of a passenger on a trip" ;
+          rdfs:label "Seat type" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType
+:TravellerType rdf:type owl:Class ;
+               rdfs:subClassOf :Trip ;
+               rdfs:comment "Traveler type of a passenger on a trip" ;
+               rdfs:label "Traveller type" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip
+:Trip rdf:type owl:Class ;
+      rdfs:subClassOf :Review ;
+      rdfs:comment "Experience of a passenger taking an individual flight" ;
+      rdfs:label "Trip" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :AircraftModel .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :AircraftModel .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000
+:A350-1000 rdf:type owl:NamedIndividual ,
+                    :A350 ;
+           :manufacturedBy :Airbus .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900
+:A350-900 rdf:type owl:NamedIndividual ,
+                   :A350 ;
+          :manufacturedBy :Airbus .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380
+:A380 rdf:type owl:NamedIndividual ,
+               :A380 ;
+      :manufacturedBy :Airbus .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800
+:A380-800 rdf:type owl:NamedIndividual ,
+                   :A380 ;
+          :manufacturedBy :Airbus .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001
+:AC00001 rdf:type owl:NamedIndividual ,
+                  :Aircraft ;
+         :hasAircraftModel :A380 ;
+         :manufacturedBy :Airbus .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002
+:AC00002 rdf:type owl:NamedIndividual ,
+                  :Aircraft ;
+         :hasAircraftModel <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> ;
+         :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus
+:Airbus rdf:type owl:NamedIndividual ,
+                 :AirframeManufacturer .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania
+:Albania rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland
+:Auckland rdf:type owl:NamedIndividual ,
+                   :City ;
+          :isIn :New_Zealand .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia
+:Australia rdf:type owl:NamedIndividual ,
+                    :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing
+:Boeing rdf:type owl:NamedIndividual ,
+                 :AirframeManufacturer .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat
+:BusinessSeat rdf:type owl:NamedIndividual ,
+                       :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller
+:BusinessTraveller rdf:type owl:NamedIndividual ,
+                            :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller
+:CoupleTraveller rdf:type owl:NamedIndividual ,
+                          :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha
+:Doha rdf:type owl:NamedIndividual ,
+               :City ;
+      :isIn :Qatar .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat
+:EconomySeat rdf:type owl:NamedIndividual ,
+                      :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001
+:F0001 rdf:type owl:NamedIndividual ,
+                :Flight ;
+       :flownFrom :Doha ;
+       :flownTo :London ;
+       :hasAirplane :AC00001 ;
+       :operatedBy :QatarAirways .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002
+:F0002 rdf:type owl:NamedIndividual ,
+                :Flight ;
+       :flownFrom :Valencia ;
+       :flownTo :Milan ;
+       :operatedBy :Ryanair .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003
+:F0003 rdf:type owl:NamedIndividual ,
+                :Flight ;
+       :flownFrom :Krakow ;
+       :flownTo :Tirana ;
+       :hasAirplane :AC00002 ;
+       :operatedBy :Ryanair .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004
+:F0004 rdf:type owl:NamedIndividual ,
+                :Flight ;
+       :flownFrom :Doha ;
+       :flownTo :Perth ;
+       :hasAirplane :AC00001 ;
+       :operatedBy :QatarAirways .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller
+:FamilyTraveller rdf:type owl:NamedIndividual ,
+                          :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat
+:FirstSeat rdf:type owl:NamedIndividual ,
+                    :SeatType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia
+:Iberia rdf:type owl:NamedIndividual ,
+                 :OneWorld .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow
+:Krakow rdf:type owl:NamedIndividual ,
+                 :City ;
+        :isIn :Poland .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London
+:London rdf:type owl:NamedIndividual ,
+                 :City ;
+        :isIn :United_Kingdom .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan
+:Milan rdf:type owl:NamedIndividual ,
+                :City ;
+       :isIn :Italy .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand
+:New_Zealand rdf:type owl:NamedIndividual ,
+                      :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001
+:P0001 rdf:type owl:NamedIndividual ,
+                :Passenger ;
+       :passengerFrom :United_Kingdom ;
+       :hasName "Qandeel Ahtasham" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002
+:P0002 rdf:type owl:NamedIndividual ,
+                :Passenger ;
+       :passengerFrom :Spain .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003
+:P0003 rdf:type owl:NamedIndividual ,
+                :Passenger ;
+       :passengerFrom :United_Kingdom ;
+       :hasName "Clayton Qualters" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004
+:P0004 rdf:type owl:NamedIndividual ,
+                :Passenger ;
+       :passengerFrom :Albania .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005
+:P0005 rdf:type owl:NamedIndividual ,
+                :Passenger ;
+       :passengerFrom :Australia ;
+       :hasName "Wayne Burgess" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth
+:Perth rdf:type owl:NamedIndividual ,
+                :City ;
+       :isIn :Australia .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland
+:Poland rdf:type owl:NamedIndividual ,
+                 :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar
+:Qatar rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways
+:QatarAirways rdf:type owl:NamedIndividual ,
+                       :OneWorld .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002
+:RQ002 rdf:type owl:NamedIndividual ,
+                :Review ;
+       :hasTrip :T0005 ;
+       :hasComment "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been “reserved” were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didn’t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didn’t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isn’t complex." ;
+       :hasRating 1 ;
+       :hasTitle "no attempt to address our complaint" ;
+       :isRecommended "0" ;
+       :isVerified "1" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005
+:RQ005 rdf:type owl:NamedIndividual ,
+                :Review ;
+       :hasTrip :T0001 ;
+       :Date_published "2024-02-20"^^xsd:date ;
+       :Date_reviewed "2024-02-20"^^xsd:date ;
+       :hasComment "12th February 2024 From check in to get onboard remarkable experience. Since steping at Hamad International airport every one was so welcoming. Check in agent was very professional and helpful. Al mourjan lounge was realy good. Great tasting food. On board all cabin crew was kind professional welcoming. Seat very good, leg space and incredible service, and a very clean plane. Inflight entertainment was great too. The staff was very polite. Arriving at London, Qatar staff gave me Fast track card that helps me to pass imigration quick. Thank you Qatar Airways." ;
+       :hasRating 10 ;
+       :hasTitle "remarkable experience" ;
+       :isRecommended "1" ;
+       :isVerified "1" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373
+:RQ373 rdf:type owl:NamedIndividual ,
+                :Review ;
+       :hasTrip :T0003 ;
+       :Date_published "2022-07-10"^^xsd:date ;
+       :Date_reviewed "2022-07-10"^^xsd:date ;
+       :hasComment "I fly with Qatar Airways every month. Credit where credit is due they are by far the best airline in the world. Staff are excellent, tentative onboard and at checkin. The seating is very spacious, food is of a high standard and inflight entertainment excellent. You can’t ask for anymore from an airline. I’m in the T4 frequent flyer lounge at Heathrow and WOW Thank you" ;
+       :hasRating 10 ;
+       :hasTitle "seating is very spacious" ;
+       :isRecommended "1" ;
+       :isVerified "1" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019
+:RR019 rdf:type owl:NamedIndividual ,
+                :Review ;
+       :hasTrip :T0002 ;
+       :Date_published "2023-10-24"^^xsd:date ;
+       :hasComment "One of the biggest rip-off companies out there. They give flights at good prices, and then will find any possible way to charge you additional money an make your trip as expensive as possible. Want to cancel your reservation within 24h from the purchase? Not possible. Need some time to choose which luggage you'll need? Be ready to pay double price for that, right after the booking. Want to change your flight? Double price just for the fees. They are tracking everything you do in their app to show you higher prices wherever they can. Customer service replies but doesn't help at all. 100% shameful company." ;
+       :hasRating 1 ;
+       :hasTitle "They give flights at good prices" ;
+       :isRecommended "no" ;
+       :isVerified "Not Verified" .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair
+:Ryanair rdf:type owl:NamedIndividual ,
+                  :Independent .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler
+:SoloTraveler rdf:type owl:NamedIndividual ,
+                       :TravellerType .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001
+:T0001 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       :hasFlight :F0001 ;
+       :hasPassenger :P0001 ;
+       :seatType :BusinessSeat ;
+       :travelerType :FamilyTraveller ;
+       :Date_flown "2024-02-01"^^xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002
+:T0002 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       :hasFlight :F0002 ;
+       :hasPassenger :P0002 ;
+       :seatType :EconomySeat ;
+       :travelerType :SoloTraveler ;
+       :Date_flown "2023-09-01"^^xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003
+:T0003 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       :hasFlight :F0001 ;
+       :hasPassenger :P0003 ;
+       :seatType :EconomySeat ;
+       :travelerType :SoloTraveler ;
+       :Date_flown "2022-06-01"^^xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004
+:T0004 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       :hasFlight :F0003 ;
+       :hasPassenger :P0004 ;
+       :seatType :EconomySeat ;
+       :travelerType :BusinessTraveller ;
+       :Date_flown "2023-12-06"^^xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005
+:T0005 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       :hasFlight :F0004 ;
+       :hasPassenger :P0005 ;
+       :seatType :EconomySeat ;
+       :travelerType :BusinessTraveller ;
+       :Date_flown "2023-11-01"^^xsd:date .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana
+:Tirana rdf:type owl:NamedIndividual ,
+                 :City ;
+        :isIn :Albania .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom
+:United_Kingdom rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          :isIn :Spain .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> rdf:type owl:NamedIndividual ,
+                                                                                           <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737> ;
+                                                                                  :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200> rdf:type owl:NamedIndividual ,
+                                                                                           <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> ;
+                                                                                  :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300> rdf:type owl:NamedIndividual ,
+                                                                                           <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> ;
+                                                                                  :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8> rdf:type owl:NamedIndividual ,
+                                                                                         <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> ;
+                                                                                :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9> rdf:type owl:NamedIndividual ,
+                                                                                         <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> ;
+                                                                                :manufacturedBy :Boeing .
+
+
+###  https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> rdf:type owl:NamedIndividual ,
+                                                                                       <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> ;
+                                                                              :manufacturedBy :Boeing .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :A320
+                :A350
+                :A380
+                <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777>
+                <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787>
+                <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

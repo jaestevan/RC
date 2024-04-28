@@ -1,0 +1,746 @@
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.1.0> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Datos sobre encuestas de satisfacción de vuelos de dos aerolíneas" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl> <http://www.w3.org/2000/01/rdf-schema#label> "FlightSatisfactionSurveys" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#SameAs
+<http://www.w3.org/2000/01/rdf-schema#SameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a specific aircraft to its model." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "has aircraft model" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to the entity that manufactured the system." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <http://www.w3.org/2000/01/rdf-schema#label> "manufactured by" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en-us .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftModel" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft model"@en-us .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A manufacturer of physical aircraft." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Airframe manufacturer"@en-us .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that provides air transport services" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://dbpedia.org/ontology/city" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the city is located." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en-us .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> <http://www.w3.org/2000/01/rdf-schema#SameAs> "https://dbpedia.org/ontology/country" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the thing is located." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en-us .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual flight operated by an airline" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> <http://www.w3.org/2000/01/rdf-schema#comment> "Airlines not linked to a larger airline alliance" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> <http://www.w3.org/2000/01/rdf-schema#label> "Independent airline" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> <http://www.w3.org/2000/01/rdf-schema#comment> "Airlines part of oneworld alliance" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> <http://www.w3.org/2000/01/rdf-schema#label> "Oneworld" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger posting a review about a trip" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual satisfaction survey results" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Satisfaction review" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat type of a passenger on a trip" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "Seat type" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveler type of a passenger on a trip" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> <http://www.w3.org/2000/01/rdf-schema#label> "Traveller type" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "Experience of a passenger taking an individual flight" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> "Qandeel Ahtasham" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> "Clayton Qualters" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName> "Wayne Burgess" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been “reserved” were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didn’t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didn’t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isn’t complex." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> "no attempt to address our complaint" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> "0" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> "1" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> "2024-02-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed> "2024-02-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> "12th February 2024 From check in to get onboard remarkable experience. Since steping at Hamad International airport every one was so welcoming. Check in agent was very professional and helpful. Al mourjan lounge was realy good. Great tasting food. On board all cabin crew was kind professional welcoming. Seat very good, leg space and incredible service, and a very clean plane. Inflight entertainment was great too. The staff was very polite. Arriving at London, Qatar staff gave me Fast track card that helps me to pass imigration quick. Thank you Qatar Airways." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> "remarkable experience" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> "1" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> "1" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> "2022-07-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed> "2022-07-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> "I fly with Qatar Airways every month. Credit where credit is due they are by far the best airline in the world. Staff are excellent, tentative onboard and at checkin. The seating is very spacious, food is of a high standard and inflight entertainment excellent. You can’t ask for anymore from an airline. I’m in the T4 frequent flyer lounge at Heathrow and WOW Thank you" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> "10"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> "seating is very spacious" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> "1" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> "1" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published> "2023-10-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment> "One of the biggest rip-off companies out there. They give flights at good prices, and then will find any possible way to charge you additional money an make your trip as expensive as possible. Want to cancel your reservation within 24h from the purchase? Not possible. Need some time to choose which luggage you'll need? Be ready to pay double price for that, right after the booking. Want to change your flight? Double price just for the fees. They are tracking everything you do in their app to show you higher prices wherever they can. Customer service replies but doesn't help at all. 100% shameful company." .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle> "They give flights at good prices" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended> "no" .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified> "Not Verified" .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> "2024-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> "2023-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> "2022-06-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> "2023-12-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown> "2023-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> .
+<https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
