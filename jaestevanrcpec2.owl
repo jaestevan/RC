@@ -11,7 +11,9 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:jaestevanrcpec2="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#">
     <owl:Ontology rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl">
-        <owl:versionIRI rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.0.0"/>
+        <owl:versionIRI rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.1.0"/>
+        <rdfs:comment>Datos sobre encuestas de satisfacción de vuelos de dos aerolíneas</rdfs:comment>
+        <rdfs:label>FlightSatisfactionSurveys</rdfs:label>
     </owl:Ontology>
     
 
@@ -535,7 +537,6 @@
     <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review -->
 
     <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Individual satisfaction survey results</rdfs:comment>
         <rdfs:label>Satisfaction review</rdfs:label>
     </owl:Class>
@@ -544,19 +545,7 @@
 
     <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished -->
 
-    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"/>
     
 
 
@@ -1202,16 +1191,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-            </owl:Restriction>
-        </owl:intersectionOf>
-        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"/>
-    </owl:Class>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -1222,65 +1201,6 @@
             <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"/>
             <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789"/>
         </owl:members>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>PublishedReview</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
