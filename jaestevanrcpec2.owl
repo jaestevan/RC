@@ -1,1784 +1,1288 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/"
+     xml:base="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl"
-     versionIRI="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.0.0">
-    <Prefix name="" IRI="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#A320"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#A350"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#A380"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aircraft"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AircraftModel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AirframeManufacturer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Airline"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#City"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Country"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Independent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OneWorld"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Passenger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Review"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ReviewPublished"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SeatType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TravellerType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Trip"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#737"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#777"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#787"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#789"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownFromCity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownFromCountry"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownToCity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#flownToCountry"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAirplane"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFlight"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPassenger"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasReviewer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTrip"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#manufacturedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#operatedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#passengerFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#seatType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#travelerType"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Date_flown"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Date_published"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Date_reviewed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasComment"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasRating"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTitle"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isPublished"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isRecommended"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isVerified"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#A350-1000"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#A350-900"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#A380"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#A380-800"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AC00001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AC00002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Airbus"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Albania"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Auckland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Australia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Boeing"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BusinessSeat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BusinessTraveller"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CoupleTraveller"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Doha"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#F0001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#F0002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#F0003"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#F0004"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FamilyTraveller"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FirstSeat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Iberia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Italy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Krakow"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#London"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Milan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#New_Zealand"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#P0001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#P0002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#P0003"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#P0004"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#P0005"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Perth"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Poland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Qatar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#QatarAirways"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RQ002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RQ005"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RQ373"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RR019"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ryanair"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SoloTraveler"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Spain"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T0001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T0002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T0003"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T0004"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#T0005"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tirana"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#United_Kingdom"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Valencia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#737-MAX"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#777-200"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#777-300"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#787-8"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#787-9"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#789"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:domain"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:date"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#A320"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#A350"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#A380"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AircraftModel"/>
-        <Class IRI="#Aircraft"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AirframeManufacturer"/>
-        <Class IRI="#Aircraft"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Airline"/>
-        <Class IRI="#Flight"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#City"/>
-        <Class IRI="#Country"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Independent"/>
-        <Class IRI="#Airline"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OneWorld"/>
-        <Class IRI="#Airline"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Passenger"/>
-        <Class IRI="#Trip"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Review"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ReviewPublished"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Review"/>
-            <DataHasValue>
-                <DataProperty IRI="#isPublished"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SeatType"/>
-        <Class IRI="#Trip"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TravellerType"/>
-        <Class IRI="#Trip"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Trip"/>
-        <Class IRI="#Review"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#737"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#777"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#787"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#789"/>
-        <Class IRI="#AircraftModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectIntersectionOf>
-            <Class IRI="#Review"/>
-            <DataHasValue>
-                <DataProperty IRI="#isPublished"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-        <Class IRI="#ReviewPublished"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#A320"/>
-        <Class IRI="#A350"/>
-        <Class IRI="#A380"/>
-        <Class IRI="#777"/>
-        <Class IRI="#787"/>
-        <Class IRI="#789"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Independent"/>
-        <Class IRI="#OneWorld"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#A350"/>
-        <NamedIndividual IRI="#A350-1000"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#A350"/>
-        <NamedIndividual IRI="#A350-900"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#A380"/>
-        <NamedIndividual IRI="#A380"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#A380"/>
-        <NamedIndividual IRI="#A380-800"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Aircraft"/>
-        <NamedIndividual IRI="#AC00001"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Aircraft"/>
-        <NamedIndividual IRI="#AC00002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AirframeManufacturer"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Albania"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Auckland"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Australia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AirframeManufacturer"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SeatType"/>
-        <NamedIndividual IRI="#BusinessSeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TravellerType"/>
-        <NamedIndividual IRI="#BusinessTraveller"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TravellerType"/>
-        <NamedIndividual IRI="#CoupleTraveller"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Doha"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SeatType"/>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Flight"/>
-        <NamedIndividual IRI="#F0001"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Flight"/>
-        <NamedIndividual IRI="#F0002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Flight"/>
-        <NamedIndividual IRI="#F0003"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Flight"/>
-        <NamedIndividual IRI="#F0004"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TravellerType"/>
-        <NamedIndividual IRI="#FamilyTraveller"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SeatType"/>
-        <NamedIndividual IRI="#FirstSeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#OneWorld"/>
-        <NamedIndividual IRI="#Iberia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Italy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Krakow"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#London"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Milan"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#New_Zealand"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Passenger"/>
-        <NamedIndividual IRI="#P0001"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Passenger"/>
-        <NamedIndividual IRI="#P0002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Passenger"/>
-        <NamedIndividual IRI="#P0003"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Passenger"/>
-        <NamedIndividual IRI="#P0004"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Passenger"/>
-        <NamedIndividual IRI="#P0005"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Perth"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Poland"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Qatar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#OneWorld"/>
-        <NamedIndividual IRI="#QatarAirways"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Review"/>
-        <NamedIndividual IRI="#RQ002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Review"/>
-        <NamedIndividual IRI="#RQ005"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Review"/>
-        <NamedIndividual IRI="#RQ373"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Review"/>
-        <NamedIndividual IRI="#RR019"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Independent"/>
-        <NamedIndividual IRI="#Ryanair"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TravellerType"/>
-        <NamedIndividual IRI="#SoloTraveler"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Spain"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Trip"/>
-        <NamedIndividual IRI="#T0001"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Trip"/>
-        <NamedIndividual IRI="#T0002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Trip"/>
-        <NamedIndividual IRI="#T0003"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Trip"/>
-        <NamedIndividual IRI="#T0004"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Trip"/>
-        <NamedIndividual IRI="#T0005"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Tirana"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#City"/>
-        <NamedIndividual IRI="#Valencia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#737"/>
-        <NamedIndividual IRI="#737-MAX"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#777"/>
-        <NamedIndividual IRI="#777-200"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#777"/>
-        <NamedIndividual IRI="#777-300"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#787"/>
-        <NamedIndividual IRI="#787-8"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#787"/>
-        <NamedIndividual IRI="#787-9"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#789"/>
-        <NamedIndividual IRI="#789"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#A350-1000"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#A350-900"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#A380"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#A380-800"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-        <NamedIndividual IRI="#AC00001"/>
-        <NamedIndividual IRI="#A380"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#AC00001"/>
-        <NamedIndividual IRI="#Airbus"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-        <NamedIndividual IRI="#AC00002"/>
-        <NamedIndividual IRI="#737-MAX"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#AC00002"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Auckland"/>
-        <NamedIndividual IRI="#New_Zealand"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Doha"/>
-        <NamedIndividual IRI="#Qatar"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownFrom"/>
-        <NamedIndividual IRI="#F0001"/>
-        <NamedIndividual IRI="#Doha"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownTo"/>
-        <NamedIndividual IRI="#F0001"/>
-        <NamedIndividual IRI="#London"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAirplane"/>
-        <NamedIndividual IRI="#F0001"/>
-        <NamedIndividual IRI="#AC00001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#operatedBy"/>
-        <NamedIndividual IRI="#F0001"/>
-        <NamedIndividual IRI="#QatarAirways"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownFrom"/>
-        <NamedIndividual IRI="#F0002"/>
-        <NamedIndividual IRI="#Valencia"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownTo"/>
-        <NamedIndividual IRI="#F0002"/>
-        <NamedIndividual IRI="#Milan"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#operatedBy"/>
-        <NamedIndividual IRI="#F0002"/>
-        <NamedIndividual IRI="#Ryanair"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownFrom"/>
-        <NamedIndividual IRI="#F0003"/>
-        <NamedIndividual IRI="#Krakow"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownTo"/>
-        <NamedIndividual IRI="#F0003"/>
-        <NamedIndividual IRI="#Tirana"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAirplane"/>
-        <NamedIndividual IRI="#F0003"/>
-        <NamedIndividual IRI="#AC00002"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#operatedBy"/>
-        <NamedIndividual IRI="#F0003"/>
-        <NamedIndividual IRI="#Ryanair"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownFrom"/>
-        <NamedIndividual IRI="#F0004"/>
-        <NamedIndividual IRI="#Doha"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#flownTo"/>
-        <NamedIndividual IRI="#F0004"/>
-        <NamedIndividual IRI="#Perth"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAirplane"/>
-        <NamedIndividual IRI="#F0004"/>
-        <NamedIndividual IRI="#AC00001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#operatedBy"/>
-        <NamedIndividual IRI="#F0004"/>
-        <NamedIndividual IRI="#QatarAirways"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Krakow"/>
-        <NamedIndividual IRI="#Poland"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#London"/>
-        <NamedIndividual IRI="#United_Kingdom"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Milan"/>
-        <NamedIndividual IRI="#Italy"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <NamedIndividual IRI="#P0001"/>
-        <NamedIndividual IRI="#United_Kingdom"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <NamedIndividual IRI="#P0002"/>
-        <NamedIndividual IRI="#Spain"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <NamedIndividual IRI="#P0003"/>
-        <NamedIndividual IRI="#United_Kingdom"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <NamedIndividual IRI="#P0004"/>
-        <NamedIndividual IRI="#Albania"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <NamedIndividual IRI="#P0005"/>
-        <NamedIndividual IRI="#Australia"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Perth"/>
-        <NamedIndividual IRI="#Australia"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTrip"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <NamedIndividual IRI="#T0005"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTrip"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <NamedIndividual IRI="#T0001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTrip"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <NamedIndividual IRI="#T0003"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTrip"/>
-        <NamedIndividual IRI="#RR019"/>
-        <NamedIndividual IRI="#T0002"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFlight"/>
-        <NamedIndividual IRI="#T0001"/>
-        <NamedIndividual IRI="#F0001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <NamedIndividual IRI="#T0001"/>
-        <NamedIndividual IRI="#P0001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#seatType"/>
-        <NamedIndividual IRI="#T0001"/>
-        <NamedIndividual IRI="#BusinessSeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#travelerType"/>
-        <NamedIndividual IRI="#T0001"/>
-        <NamedIndividual IRI="#FamilyTraveller"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFlight"/>
-        <NamedIndividual IRI="#T0002"/>
-        <NamedIndividual IRI="#F0002"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <NamedIndividual IRI="#T0002"/>
-        <NamedIndividual IRI="#P0002"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#seatType"/>
-        <NamedIndividual IRI="#T0002"/>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#travelerType"/>
-        <NamedIndividual IRI="#T0002"/>
-        <NamedIndividual IRI="#SoloTraveler"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFlight"/>
-        <NamedIndividual IRI="#T0003"/>
-        <NamedIndividual IRI="#F0001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <NamedIndividual IRI="#T0003"/>
-        <NamedIndividual IRI="#P0003"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#seatType"/>
-        <NamedIndividual IRI="#T0003"/>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#travelerType"/>
-        <NamedIndividual IRI="#T0003"/>
-        <NamedIndividual IRI="#SoloTraveler"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFlight"/>
-        <NamedIndividual IRI="#T0004"/>
-        <NamedIndividual IRI="#F0003"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <NamedIndividual IRI="#T0004"/>
-        <NamedIndividual IRI="#P0004"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#seatType"/>
-        <NamedIndividual IRI="#T0004"/>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#travelerType"/>
-        <NamedIndividual IRI="#T0004"/>
-        <NamedIndividual IRI="#BusinessTraveller"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFlight"/>
-        <NamedIndividual IRI="#T0005"/>
-        <NamedIndividual IRI="#F0004"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <NamedIndividual IRI="#T0005"/>
-        <NamedIndividual IRI="#P0005"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#seatType"/>
-        <NamedIndividual IRI="#T0005"/>
-        <NamedIndividual IRI="#EconomySeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#travelerType"/>
-        <NamedIndividual IRI="#T0005"/>
-        <NamedIndividual IRI="#BusinessTraveller"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Tirana"/>
-        <NamedIndividual IRI="#Albania"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isIn"/>
-        <NamedIndividual IRI="#Valencia"/>
-        <NamedIndividual IRI="#Spain"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#737-MAX"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#777-200"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#777-300"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#787-8"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#787-9"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <NamedIndividual IRI="#789"/>
-        <NamedIndividual IRI="#Boeing"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#P0001"/>
-        <Literal>Qandeel Ahtasham</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#P0003"/>
-        <Literal>Clayton Qualters</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#P0005"/>
-        <Literal>Wayne Burgess</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasComment"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <Literal>I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been “reserved” were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didn’t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didn’t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isn’t complex.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasRating"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <Literal>no attempt to address our complaint</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isRecommended"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <Literal>0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isVerified"/>
-        <NamedIndividual IRI="#RQ002"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_published"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-02-20</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_reviewed"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-02-20</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasComment"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal>12th February 2024 From check in to get onboard remarkable experience. Since steping at Hamad International airport every one was so welcoming. Check in agent was very professional and helpful. Al mourjan lounge was realy good. Great tasting food. On board all cabin crew was kind professional welcoming. Seat very good, leg space and incredible service, and a very clean plane. Inflight entertainment was great too. The staff was very polite. Arriving at London, Qatar staff gave me Fast track card that helps me to pass imigration quick. Thank you Qatar Airways.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasRating"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal>remarkable experience</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isRecommended"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isVerified"/>
-        <NamedIndividual IRI="#RQ005"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_published"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-07-10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_reviewed"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-07-10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasComment"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal>I fly with Qatar Airways every month. Credit where credit is due they are by far the best airline in the world. Staff are excellent, tentative onboard and at checkin. The seating is very spacious, food is of a high standard and inflight entertainment excellent. You can’t ask for anymore from an airline. I’m in the T4 frequent flyer lounge at Heathrow and WOW Thank you</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasRating"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal>seating is very spacious</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isRecommended"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isVerified"/>
-        <NamedIndividual IRI="#RQ373"/>
-        <Literal>1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_published"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-10-24</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasComment"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal>One of the biggest rip-off companies out there. They give flights at good prices, and then will find any possible way to charge you additional money an make your trip as expensive as possible. Want to cancel your reservation within 24h from the purchase? Not possible. Need some time to choose which luggage you&apos;ll need? Be ready to pay double price for that, right after the booking. Want to change your flight? Double price just for the fees. They are tracking everything you do in their app to show you higher prices wherever they can. Customer service replies but doesn&apos;t help at all. 100% shameful company.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasRating"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal>They give flights at good prices</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isRecommended"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal>no</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#isVerified"/>
-        <NamedIndividual IRI="#RR019"/>
-        <Literal>Not Verified</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_flown"/>
-        <NamedIndividual IRI="#T0001"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-02-01</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_flown"/>
-        <NamedIndividual IRI="#T0002"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-09-01</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_flown"/>
-        <NamedIndividual IRI="#T0003"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-06-01</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_flown"/>
-        <NamedIndividual IRI="#T0004"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-12-06</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date_flown"/>
-        <NamedIndividual IRI="#T0005"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-11-01</Literal>
-    </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#flownFromCity"/>
-        <ObjectProperty IRI="#flownFrom"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#flownFromCountry"/>
-        <ObjectProperty IRI="#flownFrom"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#flownToCity"/>
-        <ObjectProperty IRI="#flownTo"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#flownToCountry"/>
-        <ObjectProperty IRI="#flownTo"/>
-    </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownFrom"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownFromCity"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownFromCountry"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownTo"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownToCity"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#flownToCountry"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasAirplane"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasFlight"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasPassenger"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasReviewer"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasTrip"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isIn"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#manufacturedBy"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#operatedBy"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#passengerFrom"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#seatType"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#travelerType"/>
-    </FunctionalObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownFrom"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownFromCity"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownFromCountry"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownTo"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownToCity"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#flownToCountry"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasAirplane"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasFlight"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasPassenger"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasReviewer"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasTrip"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#isIn"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#manufacturedBy"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#operatedBy"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#passengerFrom"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#seatType"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#travelerType"/>
-    </AsymmetricObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownFrom"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownFromCity"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownFromCountry"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownTo"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownToCity"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#flownToCountry"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasAirplane"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasFlight"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasPassenger"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasReviewer"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasTrip"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#isIn"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#manufacturedBy"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#operatedBy"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#passengerFrom"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#seatType"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#travelerType"/>
-    </IrreflexiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#flownFrom"/>
-        <Class IRI="#Flight"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#flownTo"/>
-        <Class IRI="#Flight"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-        <Class IRI="#Aircraft"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAirplane"/>
-        <Class IRI="#Flight"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFlight"/>
-        <Class IRI="#Trip"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <Class IRI="#Trip"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasReviewer"/>
-        <Class IRI="#Review"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTrip"/>
-        <Class IRI="#Review"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isIn"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <Class IRI="#Aircraft"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#operatedBy"/>
-        <Class IRI="#Flight"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <Class IRI="#Passenger"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#seatType"/>
-        <Class IRI="#Trip"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#travelerType"/>
-        <Class IRI="#Trip"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownFrom"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownFromCity"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownFromCountry"/>
-        <Class IRI="#Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownTo"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownToCity"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#flownToCountry"/>
-        <Class IRI="#Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAircraftModel"/>
-        <Class IRI="#AircraftModel"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAirplane"/>
-        <Class IRI="#Aircraft"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFlight"/>
-        <Class IRI="#Flight"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPassenger"/>
-        <Class IRI="#Passenger"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasReviewer"/>
-        <Class IRI="#Passenger"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTrip"/>
-        <Class IRI="#Trip"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isIn"/>
-        <Class IRI="#Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#manufacturedBy"/>
-        <Class IRI="#AirframeManufacturer"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#operatedBy"/>
-        <Class IRI="#Airline"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#passengerFrom"/>
-        <Class IRI="#Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#seatType"/>
-        <Class IRI="#SeatType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#travelerType"/>
-        <Class IRI="#TravellerType"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Date_flown"/>
-        <Class IRI="#Trip"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Date_published"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Date_reviewed"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasComment"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasName"/>
-        <Class IRI="#Passenger"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasRating"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTitle"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#isPublished"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#isRecommended"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#isVerified"/>
-        <Class IRI="#Review"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#Date_flown"/>
-        <Datatype abbreviatedIRI="xsd:date"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Date_published"/>
-        <Datatype abbreviatedIRI="xsd:date"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Date_reviewed"/>
-        <Datatype abbreviatedIRI="xsd:date"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasComment"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasRating"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasTitle"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isPublished"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isRecommended"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isVerified"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>PublishedReview</Literal>
-        </Annotation>
-        <Body>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isPublished"/>
-                <Variable abbreviatedIRI=":r"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Review"/>
-                <Variable abbreviatedIRI=":r"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#ReviewPublished"/>
-                <Variable abbreviatedIRI=":r"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-        <IRI>#Aircraft</IRI>
-        <Literal>https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Aircraft</IRI>
-        <Literal>A physical realization of an aircraft, produced according to the specifications defined for a specific model type.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Aircraft</IRI>
-        <Literal xml:lang="en-us">Aircraft</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-        <IRI>#AircraftModel</IRI>
-        <Literal>https://data.nasa.gov/ontologies/atmonto/equipment#AircraftModel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#AircraftModel</IRI>
-        <Literal>An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AircraftModel</IRI>
-        <Literal xml:lang="en-us">Aircraft model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-        <IRI>#AirframeManufacturer</IRI>
-        <Literal>https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#AirframeManufacturer</IRI>
-        <Literal>A manufacturer of physical aircraft.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AirframeManufacturer</IRI>
-        <Literal xml:lang="en-us">Airframe manufacturer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Airline</IRI>
-        <Literal>A company that provides air transport services</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Airline</IRI>
-        <Literal>Airline</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-        <IRI>#City</IRI>
-        <Literal>https://dbpedia.org/ontology/city</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#City</IRI>
-        <Literal>The country where the city is located.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#City</IRI>
-        <Literal xml:lang="en-us">City</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:SameAs"/>
-        <IRI>#Country</IRI>
-        <Literal>https://dbpedia.org/ontology/country</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Country</IRI>
-        <Literal>The country where the thing is located.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Country</IRI>
-        <Literal xml:lang="en-us">Country</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Flight</IRI>
-        <Literal>An individual flight operated by an airline</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Flight</IRI>
-        <Literal>Flight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Independent</IRI>
-        <Literal>Airlines not linked to a larger airline alliance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Independent</IRI>
-        <Literal>Independent airline</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OneWorld</IRI>
-        <Literal>Airlines part of oneworld alliance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OneWorld</IRI>
-        <Literal>Oneworld</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Passenger</IRI>
-        <Literal>Passenger posting a review about a trip</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Passenger</IRI>
-        <Literal>Passenger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Review</IRI>
-        <Literal>Individual satisfaction survey results</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Review</IRI>
-        <Literal>Satisfaction review</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SeatType</IRI>
-        <Literal>Seat type of a passenger on a trip</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SeatType</IRI>
-        <Literal>Seat type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#TravellerType</IRI>
-        <Literal>Traveler type of a passenger on a trip</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TravellerType</IRI>
-        <Literal>Traveller type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Trip</IRI>
-        <Literal>Experience of a passenger taking an individual flight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Trip</IRI>
-        <Literal>Trip</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasAircraftModel</IRI>
-        <Literal>Links a specific aircraft to its model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasAircraftModel</IRI>
-        <Literal>has aircraft model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#manufacturedBy</IRI>
-        <Literal>A link to the entity that manufactured the system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#manufacturedBy</IRI>
-        <Literal>manufactured by</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:jaestevanrcpec2="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#">
+    <owl:Ontology rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl">
+        <owl:versionIRI rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#SameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#SameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCity">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFromCountry">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCity">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownToCountry">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#flownTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAircraftModel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+        <rdfs:comment>Links a specific aircraft to its model.</rdfs:comment>
+        <rdfs:label>has aircraft model</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasAirplane">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasFlight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasPassenger">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasReviewer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTrip">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#manufacturedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"/>
+        <rdfs:comment>A link to the entity that manufactured the system.</rdfs:comment>
+        <rdfs:label>manufactured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#operatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#passengerFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#seatType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#travelerType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:range rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_flown">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_published">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Date_reviewed">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasComment">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasName">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasRating">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#hasTitle">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isRecommended">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isVerified">
+        <rdfs:domain rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft">
+        <rdfs:SameAs>https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft</rdfs:SameAs>
+        <rdfs:comment>A physical realization of an aircraft, produced according to the specifications defined for a specific model type.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <rdfs:SameAs>https://data.nasa.gov/ontologies/atmonto/equipment#AircraftModel</rdfs:SameAs>
+        <rdfs:comment>An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Aircraft model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <rdfs:SameAs>https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer</rdfs:SameAs>
+        <rdfs:comment>A manufacturer of physical aircraft.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Airframe manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <rdfs:comment>A company that provides air transport services</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+        <rdfs:SameAs>https://dbpedia.org/ontology/city</rdfs:SameAs>
+        <rdfs:comment>The country where the city is located.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country">
+        <rdfs:SameAs>https://dbpedia.org/ontology/country</rdfs:SameAs>
+        <rdfs:comment>The country where the thing is located.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight">
+        <rdfs:comment>An individual flight operated by an airline</rdfs:comment>
+        <rdfs:label>Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"/>
+        <owl:disjointWith rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"/>
+        <rdfs:comment>Airlines not linked to a larger airline alliance</rdfs:comment>
+        <rdfs:label>Independent airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airline"/>
+        <rdfs:comment>Airlines part of oneworld alliance</rdfs:comment>
+        <rdfs:label>Oneworld</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:comment>Passenger posting a review about a trip</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Individual satisfaction survey results</rdfs:comment>
+        <rdfs:label>Satisfaction review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:comment>Seat type of a passenger on a trip</rdfs:comment>
+        <rdfs:label>Seat type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <rdfs:comment>Traveler type of a passenger on a trip</rdfs:comment>
+        <rdfs:label>Traveller type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <rdfs:comment>Experience of a passenger taking an individual flight</rdfs:comment>
+        <rdfs:label>Trip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789 -->
+
+    <owl:Class rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789">
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AircraftModel"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-1000">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350-900">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380-800">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <jaestevanrcpec2:hasAircraftModel rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Aircraft"/>
+        <jaestevanrcpec2:hasAircraftModel rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Airbus">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Auckland">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AirframeManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#CoupleTraveller">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <jaestevanrcpec2:flownFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha"/>
+        <jaestevanrcpec2:flownTo rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London"/>
+        <jaestevanrcpec2:hasAirplane rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001"/>
+        <jaestevanrcpec2:operatedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <jaestevanrcpec2:flownFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia"/>
+        <jaestevanrcpec2:flownTo rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan"/>
+        <jaestevanrcpec2:operatedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <jaestevanrcpec2:flownFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow"/>
+        <jaestevanrcpec2:flownTo rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana"/>
+        <jaestevanrcpec2:hasAirplane rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00002"/>
+        <jaestevanrcpec2:operatedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Flight"/>
+        <jaestevanrcpec2:flownFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Doha"/>
+        <jaestevanrcpec2:flownTo rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth"/>
+        <jaestevanrcpec2:hasAirplane rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#AC00001"/>
+        <jaestevanrcpec2:operatedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FirstSeat">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SeatType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Iberia">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Krakow">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#London">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Milan">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#New_Zealand">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <jaestevanrcpec2:passengerFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"/>
+        <jaestevanrcpec2:hasName>Qandeel Ahtasham</jaestevanrcpec2:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <jaestevanrcpec2:passengerFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <jaestevanrcpec2:passengerFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"/>
+        <jaestevanrcpec2:hasName>Clayton Qualters</jaestevanrcpec2:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <jaestevanrcpec2:passengerFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Passenger"/>
+        <jaestevanrcpec2:passengerFrom rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia"/>
+        <jaestevanrcpec2:hasName>Wayne Burgess</jaestevanrcpec2:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Perth">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Australia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Poland">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Qatar">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#QatarAirways">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#OneWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ002">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <jaestevanrcpec2:hasTrip rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005"/>
+        <jaestevanrcpec2:hasComment>I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been “reserved” were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didn’t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didn’t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isn’t complex.</jaestevanrcpec2:hasComment>
+        <jaestevanrcpec2:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</jaestevanrcpec2:hasRating>
+        <jaestevanrcpec2:hasTitle>no attempt to address our complaint</jaestevanrcpec2:hasTitle>
+        <jaestevanrcpec2:isRecommended>0</jaestevanrcpec2:isRecommended>
+        <jaestevanrcpec2:isVerified>1</jaestevanrcpec2:isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ005">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <jaestevanrcpec2:hasTrip rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001"/>
+        <jaestevanrcpec2:Date_published rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-20</jaestevanrcpec2:Date_published>
+        <jaestevanrcpec2:Date_reviewed rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-20</jaestevanrcpec2:Date_reviewed>
+        <jaestevanrcpec2:hasComment>12th February 2024 From check in to get onboard remarkable experience. Since steping at Hamad International airport every one was so welcoming. Check in agent was very professional and helpful. Al mourjan lounge was realy good. Great tasting food. On board all cabin crew was kind professional welcoming. Seat very good, leg space and incredible service, and a very clean plane. Inflight entertainment was great too. The staff was very polite. Arriving at London, Qatar staff gave me Fast track card that helps me to pass imigration quick. Thank you Qatar Airways.</jaestevanrcpec2:hasComment>
+        <jaestevanrcpec2:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</jaestevanrcpec2:hasRating>
+        <jaestevanrcpec2:hasTitle>remarkable experience</jaestevanrcpec2:hasTitle>
+        <jaestevanrcpec2:isRecommended>1</jaestevanrcpec2:isRecommended>
+        <jaestevanrcpec2:isVerified>1</jaestevanrcpec2:isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RQ373">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <jaestevanrcpec2:hasTrip rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003"/>
+        <jaestevanrcpec2:Date_published rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-10</jaestevanrcpec2:Date_published>
+        <jaestevanrcpec2:Date_reviewed rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-10</jaestevanrcpec2:Date_reviewed>
+        <jaestevanrcpec2:hasComment>I fly with Qatar Airways every month. Credit where credit is due they are by far the best airline in the world. Staff are excellent, tentative onboard and at checkin. The seating is very spacious, food is of a high standard and inflight entertainment excellent. You can’t ask for anymore from an airline. I’m in the T4 frequent flyer lounge at Heathrow and WOW Thank you</jaestevanrcpec2:hasComment>
+        <jaestevanrcpec2:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</jaestevanrcpec2:hasRating>
+        <jaestevanrcpec2:hasTitle>seating is very spacious</jaestevanrcpec2:hasTitle>
+        <jaestevanrcpec2:isRecommended>1</jaestevanrcpec2:isRecommended>
+        <jaestevanrcpec2:isVerified>1</jaestevanrcpec2:isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#RR019">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+        <jaestevanrcpec2:hasTrip rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002"/>
+        <jaestevanrcpec2:Date_published rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-24</jaestevanrcpec2:Date_published>
+        <jaestevanrcpec2:hasComment>One of the biggest rip-off companies out there. They give flights at good prices, and then will find any possible way to charge you additional money an make your trip as expensive as possible. Want to cancel your reservation within 24h from the purchase? Not possible. Need some time to choose which luggage you&apos;ll need? Be ready to pay double price for that, right after the booking. Want to change your flight? Double price just for the fees. They are tracking everything you do in their app to show you higher prices wherever they can. Customer service replies but doesn&apos;t help at all. 100% shameful company.</jaestevanrcpec2:hasComment>
+        <jaestevanrcpec2:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</jaestevanrcpec2:hasRating>
+        <jaestevanrcpec2:hasTitle>They give flights at good prices</jaestevanrcpec2:hasTitle>
+        <jaestevanrcpec2:isRecommended>no</jaestevanrcpec2:isRecommended>
+        <jaestevanrcpec2:isVerified>Not Verified</jaestevanrcpec2:isVerified>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Ryanair">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Independent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#TravellerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0001">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <jaestevanrcpec2:hasFlight rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001"/>
+        <jaestevanrcpec2:hasPassenger rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0001"/>
+        <jaestevanrcpec2:seatType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessSeat"/>
+        <jaestevanrcpec2:travelerType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#FamilyTraveller"/>
+        <jaestevanrcpec2:Date_flown rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</jaestevanrcpec2:Date_flown>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0002">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <jaestevanrcpec2:hasFlight rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0002"/>
+        <jaestevanrcpec2:hasPassenger rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0002"/>
+        <jaestevanrcpec2:seatType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"/>
+        <jaestevanrcpec2:travelerType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler"/>
+        <jaestevanrcpec2:Date_flown rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-01</jaestevanrcpec2:Date_flown>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0003">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <jaestevanrcpec2:hasFlight rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0001"/>
+        <jaestevanrcpec2:hasPassenger rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0003"/>
+        <jaestevanrcpec2:seatType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"/>
+        <jaestevanrcpec2:travelerType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#SoloTraveler"/>
+        <jaestevanrcpec2:Date_flown rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-01</jaestevanrcpec2:Date_flown>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0004">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <jaestevanrcpec2:hasFlight rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0003"/>
+        <jaestevanrcpec2:hasPassenger rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0004"/>
+        <jaestevanrcpec2:seatType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"/>
+        <jaestevanrcpec2:travelerType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller"/>
+        <jaestevanrcpec2:Date_flown rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-06</jaestevanrcpec2:Date_flown>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#T0005">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Trip"/>
+        <jaestevanrcpec2:hasFlight rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#F0004"/>
+        <jaestevanrcpec2:hasPassenger rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#P0005"/>
+        <jaestevanrcpec2:seatType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#EconomySeat"/>
+        <jaestevanrcpec2:travelerType rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#BusinessTraveller"/>
+        <jaestevanrcpec2:Date_flown rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-01</jaestevanrcpec2:Date_flown>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Tirana">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Albania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#United_Kingdom"/>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Valencia">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#City"/>
+        <jaestevanrcpec2:isIn rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737-MAX">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#737"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-200">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777-300">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-8">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787-9">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789">
+        <rdf:type rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789"/>
+        <jaestevanrcpec2:manufacturedBy rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Boeing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A320"/>
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A350"/>
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#A380"/>
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#777"/>
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#787"/>
+            <rdf:Description rdf:about="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#789"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>PublishedReview</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#isPublished"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#Review"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://github.com/jaestevan/RC/tree/main/OnToology/jaestevanrcpec2.owl#ReviewPublished"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jaest/ontologies/2024/3/flightreviews/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
